@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - RV
+  - Pickup
   layers:
   - Default
   - TransparentFX

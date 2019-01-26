@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2144538130217469463}
   - component: {fileID: 6945526702248271220}
-  - component: {fileID: 6945526702248271221}
   m_Layer: 0
   m_Name: Battery
-  m_TagString: Untagged
+  m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 6945526702248271219}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 20, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 860742871640807516}
   m_Father: {fileID: 0}
@@ -46,19 +45,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.18342952, y: 0.46921927, z: 0.32997823}
   m_Center: {x: 0.008254036, y: 0.23455343, z: -0.0030921698}
---- !u!114 &6945526702248271221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6945526702248271219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7bb92c988d144f78955b061e761574f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
 --- !u!1001 &860742871641195228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72,11 +58,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 48e99a34beb4c4e37a3ff586659b58c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 48e99a34beb4c4e37a3ff586659b58c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.252
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 48e99a34beb4c4e37a3ff586659b58c5, type: 3}
       propertyPath: m_LocalPosition.z
