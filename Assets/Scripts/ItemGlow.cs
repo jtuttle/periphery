@@ -16,8 +16,12 @@ public class ItemGlow : MonoBehaviour
     void Update()
     {
         float distance = Vector3.Distance(_player.transform.position, gameObject.transform.position);
-        float outline = (distance < _glowThreshold) ? 0.3f : 0;
+        float glow = (distance < _glowThreshold) ? 0.3f : 0;
 
-        _model.GetComponent<Renderer>().material.SetFloat("_Outline", outline);
+        SetGlow(glow);
+    }
+
+    public void SetGlow(float value) {
+        _model.GetComponent<Renderer>().material.SetFloat("_Outline", value);
     }
 }
