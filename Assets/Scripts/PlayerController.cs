@@ -35,6 +35,29 @@ public class PlayerController : MonoBehaviour {
         gameObject.transform.GetChild(0).GetComponent<Animator>().SetBool("Running", isMoving);
     }
 
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("RV") && item != null)
+        {
+            ItemEnum itemType = item.gameObject.GetComponent<ItemType>().ItemEnum;
+
+            if (itemType == ItemEnum.BATTERY)
+            {
+                StartCoroutine(ExpandSpotlight(0.8f, 0.5f));
+                
+                GameObject.Destroy(item);
+                item = null;
+            }
+            else if(itemType == ItemEnum.TIRE)
+            {
+                item.transform.parent = other.gameObject.transform;
+                Vector3 pos = other.gameObject.transform.position;
+                item.gameObject.transform.position = new Vector3(pos.x - 2, pos.y += 3, pos.z);
+                item = null;
+            }
+        }
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("Pickup") && item == null) {
@@ -48,27 +71,8 @@ public class PlayerController : MonoBehaviour {
             ItemGlow itemGlow = item.GetComponent<ItemGlow>();
             itemGlow.SetGlow(0);
             itemGlow.enabled = false;
-        }
 
-
-        if (other.gameObject.CompareTag("RV") && item != null)
-        {
-            ItemEnum itemType = item.gameObject.GetComponent<ItemType>().ItemEnum;
-
-            if (itemType == ItemEnum.BATTERY)
-            {
-                StartCoroutine(ExpandSpotlight(0.8f, 0.5f));
-                
-                GameObject.Destroy(item);
-                item = null;
-            }
-            if(itemType == ItemEnum.TIRE)
-            {
-                item.transform.parent = other.gameObject.transform;
-                Vector3 pos = other.gameObject.transform.position;
-                item.gameObject.transform.position = new Vector3(pos.x - 2, pos.y += 3, pos.z);
-                item = null;
-            }
+            item.GetComponent<Collider>().enabled = false;
         }
     }
 

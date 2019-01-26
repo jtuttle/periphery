@@ -295,6 +295,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 961438733204186461, guid: 43dc8d5602da84bdd9261b5f7bd58260,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 961438733204186465, guid: 43dc8d5602da84bdd9261b5f7bd58260,
         type: 3}
       propertyPath: spotLight
