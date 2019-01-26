@@ -30,13 +30,31 @@ public class PlayerController : MonoBehaviour {
             other.gameObject.transform.parent = gameObject.transform;
             other.gameObject.transform.position = new Vector3(pos.x, pos.y + 1, pos.z);
             item = other.gameObject;
+
+            ItemEnum itemType = other.gameObject.GetComponent<ItemType>().ItemEnum;
+
+            if(itemType == ItemEnum.BATTERY) {
+                Debug.Log("BATTERY!");
+            }
         }
 
         if(other.gameObject.CompareTag("RV"))
         {
             GameObject.Destroy(item);
             item = null;
-            spotLight.GetComponent<Light>().spotAngle += 30;
+            
+            StartCoroutine(ExpandSpotlight(0.8f, 0.5f));
+        }
+    }
+
+    IEnumerator ExpandSpotlight(float stepAmount, float duration) {
+        float elapsed = 0;
+
+        while(elapsed < duration) {
+            spotLight.GetComponent<Light>().spotAngle += stepAmount;
+            Debug.Log(elapsed);
+            elapsed += Time.deltaTime;
+            yield return null;
         }
     }
 }
