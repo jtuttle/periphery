@@ -295,11 +295,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 961438733204186461, guid: 43dc8d5602da84bdd9261b5f7bd58260,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 961438733204186465, guid: 43dc8d5602da84bdd9261b5f7bd58260,
         type: 3}
       propertyPath: spotLight
@@ -310,11 +305,6 @@ PrefabInstance:
       propertyPath: RV
       value: 
       objectReference: {fileID: 663847235}
-    - target: {fileID: 961438733204186465, guid: 43dc8d5602da84bdd9261b5f7bd58260,
-        type: 3}
-      propertyPath: speed
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 693618895, guid: 43dc8d5602da84bdd9261b5f7bd58260, type: 3}
       propertyPath: spotLight
       value: 
@@ -554,24 +544,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6978195688889440327, guid: 6d32de2d09f9b438e99cb81c82ca84f5,
-        type: 3}
-      propertyPath: m_SpotAngle
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 6978195688889440327, guid: 6d32de2d09f9b438e99cb81c82ca84f5,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 761877870, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
       propertyPath: Plane
       value: 
       objectReference: {fileID: 1754715072}
-    - target: {fileID: 485284087, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: d1e454b45d0bd4c4c8c4640920fc1b0b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
 --- !u!1 &993144672
