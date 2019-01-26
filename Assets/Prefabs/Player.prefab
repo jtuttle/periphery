@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5661b5230f9e4014b6c72a6fc05995c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.25
+  speed: 0.1
   spotLight: {fileID: 0}
   RV: {fileID: 0}
 --- !u!114 &693618895
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotLight: {fileID: 0}
   RV: {fileID: 0}
-  SecondsToLive: 5
+  SecondsToLive: 20
   IsDead: 0
 --- !u!1001 &1036325207
 PrefabInstance:
