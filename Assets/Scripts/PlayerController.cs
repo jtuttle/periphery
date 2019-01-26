@@ -20,4 +20,13 @@ public class PlayerController : MonoBehaviour {
 
         transform.position = new Vector3(xPos, transform.position.y, zPos);
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Pickup")) {
+            Vector3 pos = gameObject.transform.position;
+            other.gameObject.transform.parent = gameObject.transform;
+            other.gameObject.transform.position = new Vector3(pos.x, pos.y + 1, pos.z);
+        }
+    }
 }

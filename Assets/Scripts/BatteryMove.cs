@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class BatteryMove : MonoBehaviour
 {
-    public GameObject Player;
-
-    void Start()
-    {
-
-    }
-
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
         Debug.Log("foo");
-        gameObject.transform.parent = Player.transform;
+
+        if(other.gameObject.CompareTag("Player")) {
+            gameObject.transform.parent = other.gameObject.transform;
+        }
     }
  
 }
