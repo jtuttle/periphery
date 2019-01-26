@@ -22,9 +22,12 @@ public class LightOverTime : MonoBehaviour
     void Update()
     {
         currentAngle -= interval;
-        if(currentAngle < 0){
-            currentAngle = 0;
+
+        lt.spotAngle -= interval;
+
+        if(lt.spotAngle < 0)
+        {
+            lt.spotAngle = 0;
         }
-        lt.spotAngle = currentAngle;
     }
 }
