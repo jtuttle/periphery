@@ -52,7 +52,6 @@ public class PlayerController : MonoBehaviour {
 
         while(elapsed < duration) {
             spotLight.GetComponent<Light>().spotAngle += stepAmount;
-            Debug.Log(elapsed);
             elapsed += Time.deltaTime;
             yield return null;
         }
