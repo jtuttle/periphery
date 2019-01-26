@@ -22,6 +22,12 @@ public class PlayerController : MonoBehaviour {
         float zPos = transform.position.z + (moveVertical * speed);
 
         transform.position = new Vector3(xPos, transform.position.y, zPos);
+        
+        Vector3 direction = new Vector3(moveHorizontal, 0, moveVertical).normalized;
+
+        if(direction.magnitude > 0) {
+            transform.forward = direction;
+        }
     }
 
     void OnTriggerEnter(Collider other)
