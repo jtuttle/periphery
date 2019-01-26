@@ -229,6 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 761877871}
+  RV: {fileID: 1571010411}
 --- !u!1 &761877869 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6494776348808116356, guid: 6d32de2d09f9b438e99cb81c82ca84f5,
