@@ -135,5 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da9b7ded75f0a48e293ac7efb3e137cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light: {fileID: 0}
+  spotLight: {fileID: 0}
   RV: {fileID: 0}
+  SecondsToLive: 0
+  IsDead: 0
