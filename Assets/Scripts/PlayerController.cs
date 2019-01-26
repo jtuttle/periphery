@@ -25,9 +25,14 @@ public class PlayerController : MonoBehaviour {
         
         Vector3 direction = new Vector3(moveHorizontal, 0, moveVertical).normalized;
 
+        bool isMoving = false;
+
         if(direction.magnitude > 0) {
             transform.forward = direction;
+            isMoving = true;
         }
+
+        gameObject.transform.GetChild(0).GetComponent<Animator>().SetBool("Running", isMoving);
     }
 
     void OnTriggerEnter(Collider other)
