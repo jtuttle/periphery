@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LightDie : MonoBehaviour
 {
-    public Light light;
+    public Light spotLight;
     public GameObject RV;
 
     // Start is called before the first frame update
@@ -16,9 +16,9 @@ public class LightDie : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float radius = light.GetComponent<LightRadius>().radius;
+        float radius = spotLight.GetComponent<LightRadius>().radius;
         float distance = Vector3.Distance(RV.transform.position, gameObject.transform.position);
 
-        Debug.Log(distance > radius);
+        Debug.Log(distance > radius*.8393);
     }
 }

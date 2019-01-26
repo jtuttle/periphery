@@ -228,6 +228,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: RV
       objectReference: {fileID: 0}
+    - target: {fileID: 6978195688889440327, guid: 6d32de2d09f9b438e99cb81c82ca84f5,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978195688889440327, guid: 6d32de2d09f9b438e99cb81c82ca84f5,
+        type: 3}
+      propertyPath: m_SpotAngle
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 5261499200032915946, guid: 6d32de2d09f9b438e99cb81c82ca84f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -283,10 +293,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1571010412, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 534669905, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 28.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 534669905, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.7
+      objectReference: {fileID: 0}
     - target: {fileID: 761877870, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
       propertyPath: Plane
       value: 
       objectReference: {fileID: 836829835}
+    - target: {fileID: 88828233001887379, guid: 6d32de2d09f9b438e99cb81c82ca84f5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 88828233001887379, guid: 6d32de2d09f9b438e99cb81c82ca84f5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
 --- !u!1001 &1998036782
@@ -364,5 +396,9 @@ PrefabInstance:
       propertyPath: RV
       value: 
       objectReference: {fileID: 1571010411}
+    - target: {fileID: 693618895, guid: 43dc8d5602da84bdd9261b5f7bd58260, type: 3}
+      propertyPath: spotLight
+      value: 
+      objectReference: {fileID: 761877871}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43dc8d5602da84bdd9261b5f7bd58260, type: 3}

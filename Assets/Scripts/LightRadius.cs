@@ -12,7 +12,7 @@ public class LightRadius : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float height = Mathf.Abs(transform.position.z - Plane.transform.position.z);
+        float height = Mathf.Abs(transform.position.y - Plane.transform.position.y);
 
 Debug.Log("height " + height);
 
