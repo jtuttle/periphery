@@ -80,7 +80,7 @@ ModelImporter:
     3300000: default
     4300000: default
     4300002: pPlane145
-    7400000: mixamo.com
+    7400000: running
     9500000: //RootNode
     13700000: pPlane145
     2186277476908879412: ImportLogs
@@ -113,7 +113,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: mixamo.com
+      name: running
       takeName: mixamo.com
       firstFrame: 0
       lastFrame: 33
