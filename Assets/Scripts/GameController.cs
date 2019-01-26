@@ -4,23 +4,33 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    public GameObject EndingScreen;
+    public GameObject GameOverScreen;
+    public GameObject VictoryScreen;
     public GameObject Player;
     public GameObject RV;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private float _victoryThreshold = 100.0f;
 
-    // Update is called once per frame
+    private bool _gameOver = false;
+
     void Update()
     {
-        if(Player.GetComponent<LightDie>().IsDead) {
+        if(_gameOver) {
+            return;
+        }
+
+        if(RV.transform.position.x > _victoryThreshold) {
+            _gameOver = true;
             Player.SetActive(false);
             RV.SetActive(false);
-            EndingScreen.SetActive(true);
+            VictoryScreen.SetActive(true);
+        }
+
+        if(Player.GetComponent<LightDie>().IsDead) {
+            _gameOver = true;
+            Player.SetActive(false);
+            RV.SetActive(false);
+            GameOverScreen.SetActive(true);
         }
     }
 }
