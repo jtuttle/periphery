@@ -6,6 +6,7 @@ public class GameController : MonoBehaviour
 {
     public GameObject EndingScreen;
     public GameObject Player;
+    public GameObject RV;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,8 @@ public class GameController : MonoBehaviour
     void Update()
     {
         if(Player.GetComponent<LightDie>().IsDead) {
+            Player.SetActive(false);
+            RV.SetActive(false);
             EndingScreen.SetActive(true);
         }
     }
