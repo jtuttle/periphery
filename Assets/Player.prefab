@@ -108,6 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.25
+  spotLight: {fileID: 0}
 --- !u!54 &693618894
 Rigidbody:
   m_ObjectHideFlags: 0

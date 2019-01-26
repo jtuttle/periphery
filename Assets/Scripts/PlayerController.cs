@@ -4,6 +4,8 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 
     public float speed;
+    private GameObject item;
+    public GameObject spotLight;
 
     void Start ()
     {
@@ -23,10 +25,18 @@ public class PlayerController : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Pickup")) {
+        if(other.gameObject.CompareTag("Pickup") && item == null) {
             Vector3 pos = gameObject.transform.position;
             other.gameObject.transform.parent = gameObject.transform;
             other.gameObject.transform.position = new Vector3(pos.x, pos.y + 1, pos.z);
+            item = other.gameObject;
+        }
+
+        if(other.gameObject.CompareTag("RV"))
+        {
+            GameObject.Destroy(item);
+            item = null;
+            spotLight.GetComponent<Light>().spotAngle += 30;
         }
     }
 }
