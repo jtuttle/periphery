@@ -16,8 +16,8 @@ public class PlayerController : MonoBehaviour {
         float moveVertical = Input.GetAxis("Vertical");
 
         float xPos = transform.position.x + (moveHorizontal * speed);
-        float yPos = transform.position.y + (moveVertical * speed);
+        float zPos = transform.position.z + (moveVertical * speed);
 
-        transform.position = new Vector3(xPos, yPos, transform.position.z);
+        transform.position = new Vector3(xPos, transform.position.y, zPos);
     }
 }
