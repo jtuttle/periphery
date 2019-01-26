@@ -12,10 +12,7 @@ public class LightRadius : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float height = Mathf.Abs(transform.position.z - Plane.transform.position.z);
-
-Debug.Log("height " + height);
-
+        float height = Mathf.Abs(transform.position.y - Plane.transform.position.y);
         float angle = Mathf.Deg2Rad * (gameObject.GetComponent<Light>().spotAngle / 2);
         radius = Mathf.Tan(angle) * height; 
     }
