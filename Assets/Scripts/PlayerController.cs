@@ -18,6 +18,6 @@ public class PlayerController : MonoBehaviour {
         float xPos = transform.position.x + (moveHorizontal * speed);
         float yPos = transform.position.y + (moveVertical * speed);
 
-        transform.position = new Vector3(xPos, yPos, 0);
+        transform.position = new Vector3(xPos, yPos, transform.position.z);
     }
 }
