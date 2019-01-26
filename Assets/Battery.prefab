@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2144538130217469463}
+  - component: {fileID: 6945526702248271220}
+  - component: {fileID: 6945526702248271221}
   m_Layer: 0
   m_Name: Battery
   m_TagString: Untagged
@@ -31,6 +33,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6945526702248271220
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6945526702248271219}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18342952, y: 0.46921927, z: 0.32997823}
+  m_Center: {x: 0.008254036, y: 0.23455343, z: -0.0030921698}
+--- !u!114 &6945526702248271221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6945526702248271219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7bb92c988d144f78955b061e761574f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
 --- !u!1001 &860742871641195228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44,15 +72,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 48e99a34beb4c4e37a3ff586659b58c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.2480587
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 48e99a34beb4c4e37a3ff586659b58c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -19.985582
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 48e99a34beb4c4e37a3ff586659b58c5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.2356659
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 48e99a34beb4c4e37a3ff586659b58c5, type: 3}
       propertyPath: m_LocalRotation.x
