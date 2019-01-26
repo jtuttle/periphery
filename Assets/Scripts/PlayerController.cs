@@ -27,26 +27,29 @@ public class PlayerController : MonoBehaviour {
     void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("Pickup") && item == null) {
-            Vector3 pos = gameObject.transform.position;
-            other.gameObject.transform.parent = gameObject.transform;
-            other.gameObject.transform.position = new Vector3(pos.x, pos.y + 1, pos.z);
             item = other.gameObject;
 
+            item.transform.parent = gameObject.transform;
+
+            Vector3 pos = gameObject.transform.position;
+            item.transform.position = new Vector3(pos.x, pos.y + 1, pos.z);
+            
+            ItemGlow itemGlow = item.GetComponent<ItemGlow>();
+            itemGlow.SetGlow(0);
+            itemGlow.enabled = false;
         }
 
 
         if (other.gameObject.CompareTag("RV") && item != null)
         {
-
             ItemEnum itemType = item.gameObject.GetComponent<ItemType>().ItemEnum;
 
             if (itemType == ItemEnum.BATTERY)
             {
-
+                StartCoroutine(ExpandSpotlight(0.8f, 0.5f));
+                
                 GameObject.Destroy(item);
                 item = null;
-
-                StartCoroutine(ExpandSpotlight(0.8f, 0.5f));
             }
             if(itemType == ItemEnum.TIRE)
             {
@@ -55,7 +58,6 @@ public class PlayerController : MonoBehaviour {
                 item.gameObject.transform.position = new Vector3(pos.x - 2, pos.y += 3, pos.z);
             }
         }
-
     }
 
     IEnumerator ExpandSpotlight(float stepAmount, float duration) {
