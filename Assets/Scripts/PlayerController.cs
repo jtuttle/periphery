@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour {
     public float speed;
     private GameObject item;
     public GameObject spotLight;
+    public GameObject RV;
 
     void Start ()
     {
@@ -31,20 +32,30 @@ public class PlayerController : MonoBehaviour {
             other.gameObject.transform.position = new Vector3(pos.x, pos.y + 1, pos.z);
             item = other.gameObject;
 
-            ItemEnum itemType = other.gameObject.GetComponent<ItemType>().ItemEnum;
+        }
 
-            if(itemType == ItemEnum.BATTERY) {
-                Debug.Log("BATTERY!");
+
+        if (other.gameObject.CompareTag("RV") && item != null)
+        {
+
+            ItemEnum itemType = item.gameObject.GetComponent<ItemType>().ItemEnum;
+
+            if (itemType == ItemEnum.BATTERY)
+            {
+
+                GameObject.Destroy(item);
+                item = null;
+
+                StartCoroutine(ExpandSpotlight(0.8f, 0.5f));
+            }
+            if(itemType == ItemEnum.TIRE)
+            {
+                item.transform.parent = other.gameObject.transform;
+                Vector3 pos = other.gameObject.transform.position;
+                item.gameObject.transform.position = new Vector3(pos.x - 2, pos.y += 3, pos.z);
             }
         }
 
-        if(other.gameObject.CompareTag("RV"))
-        {
-            GameObject.Destroy(item);
-            item = null;
-            
-            StartCoroutine(ExpandSpotlight(0.8f, 0.5f));
-        }
     }
 
     IEnumerator ExpandSpotlight(float stepAmount, float duration) {
