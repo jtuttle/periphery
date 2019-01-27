@@ -15,7 +15,7 @@ public class GameController : MonoBehaviour
     private bool _gameOver = false;
 
     void Start(){
-        
+
     }
 
     void Update()
