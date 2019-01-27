@@ -1,7 +1,7 @@
 # Periphery
 
 * [Play online ](https://jtuttle.github.io/periphery/) (Chrome only)
-* [Download Mac](https://github.com/jtuttle/periphery/raw/master/Downloads/Periphery.app.zip)
+* [Download Mac](https://github.com/jtuttle/periphery/raw/master/Downloads/Periphery.app.zip) - You might need to go to Preferences/Security and allow it to open.
 * [Download PC](https://github.com/jtuttle/periphery/raw/master/Downloads/Periphery.exe.zip) - Unzip and run Periphery.exe
 
 Enjoy!
