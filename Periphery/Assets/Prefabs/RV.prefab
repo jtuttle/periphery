@@ -412,7 +412,7 @@ MonoBehaviour:
   speed: 0.05
   EngineStart: {fileID: 8300000, guid: a7751fea281b84bf4a31d872364c0761, type: 3}
   EngineRunning: {fileID: 663847236}
-  GameMusic: {fileID: 0}
+  GameMusic: {fileID: 920610248}
 --- !u!1001 &6044812546847161148
 PrefabInstance:
   m_ObjectHideFlags: 0
