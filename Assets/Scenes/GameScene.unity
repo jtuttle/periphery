@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.3587269, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -275,7 +275,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 36c383e8c0e264ad7add818388c54872, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -464,7 +464,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2636451013985983711, guid: 1332bc360c8f044efbbaa00271fee78d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1332bc360c8f044efbbaa00271fee78d, type: 3}
 --- !u!1001 &309558716
 PrefabInstance:
@@ -840,11 +841,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Map
       objectReference: {fileID: 0}
-    - target: {fileID: 6303624343236704799, guid: bf6e7efcb4d4b4191ad779f132cf278c,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4168788672130819051, guid: bf6e7efcb4d4b4191ad779f132cf278c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -920,15 +916,15 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -11.33
       objectReference: {fileID: 0}
-    - target: {fileID: 2144538129900232136, guid: bf6e7efcb4d4b4191ad779f132cf278c,
+    - target: {fileID: 6303624343236704799, guid: bf6e7efcb4d4b4191ad779f132cf278c,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.567
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2144538129900232136, guid: bf6e7efcb4d4b4191ad779f132cf278c,
+    - target: {fileID: 4168788672166285535, guid: bf6e7efcb4d4b4191ad779f132cf278c,
         type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.02
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 795056359609763449, guid: bf6e7efcb4d4b4191ad779f132cf278c,
         type: 3}
@@ -940,11 +936,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 4168788672166285535, guid: bf6e7efcb4d4b4191ad779f132cf278c,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4168788672166285773, guid: bf6e7efcb4d4b4191ad779f132cf278c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -954,6 +945,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144538129900232136, guid: bf6e7efcb4d4b4191ad779f132cf278c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.567
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144538129900232136, guid: bf6e7efcb4d4b4191ad779f132cf278c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf6e7efcb4d4b4191ad779f132cf278c, type: 3}
