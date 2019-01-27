@@ -1,5 +1,9 @@
 # Periphery
 
+* Play online 
+* Download Mac
+* Download PC
+
 Enjoy!
 
 # Credits
