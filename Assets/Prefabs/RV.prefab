@@ -155,8 +155,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.43, y: 2.87, z: 2.36}
-  m_Center: {x: 0, y: 1.3, z: 0}
+  m_Size: {x: 10.595779, y: 3.9278612, z: 2.981185}
+  m_Center: {x: 0.047445297, y: 1.8289306, z: 0.016346931}
 --- !u!54 &1571010413
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -185,14 +185,14 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cf64ff489a93a4db2b7c0f2e452d27f1, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.105
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 112
-  DopplerLevel: 1
+  Priority: 181
+  DopplerLevel: 0
   MinDistance: 0
   MaxDistance: 25
   Pan2D: 0
@@ -301,11 +301,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: af31998bef67241fd8cf30197a82cf69, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: af31998bef67241fd8cf30197a82cf69, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.0054555
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: af31998bef67241fd8cf30197a82cf69, type: 3}
       propertyPath: m_LocalRotation.x
@@ -341,15 +341,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: af31998bef67241fd8cf30197a82cf69, type: 3}
       propertyPath: m_LocalScale.x
-      value: 200
+      value: 296.30002
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: af31998bef67241fd8cf30197a82cf69, type: 3}
       propertyPath: m_LocalScale.y
-      value: 200
+      value: 296.30002
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: af31998bef67241fd8cf30197a82cf69, type: 3}
       propertyPath: m_LocalScale.z
-      value: 200
+      value: 296.30002
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af31998bef67241fd8cf30197a82cf69, type: 3}

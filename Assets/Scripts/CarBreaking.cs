@@ -18,14 +18,20 @@ public class CarBreaking : MonoBehaviour
     void OnTriggerEnter(Collider other)
 
     {
-        Debug.Log("Trigered");
-        breakCar = true;
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Trigered");
+            breakCar = true;
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("Untriggered");
-        breakCar = false;
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Untriggered");
+            breakCar = false;
+        }
     }
     void Update()
     {
