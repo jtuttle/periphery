@@ -3253,6 +3253,10 @@ ModelImporter:
     106494: Wheeler:Truck:transform515
     106496: Wheeler:Truck:transform516
     106498: Wheeler:Truck:transform6
+    106500: group
+    106502: group1
+    106504: pasted__pCone5
+    106506: wasteland_assets_safety2:pCube300
     400000: child_avatar_biglegs:pPlane1
     400002: child_avatar_biglegs:pPlane2
     400004: child_avatar_biglegs:pPlane3
@@ -6503,6 +6507,10 @@ ModelImporter:
     406494: Wheeler:Truck:transform515
     406496: Wheeler:Truck:transform516
     406498: Wheeler:Truck:transform6
+    406500: group
+    406502: group1
+    406504: pasted__pCone5
+    406506: wasteland_assets_safety2:pCube300
     2100000: Trees_Vegetation_Light
     2100002: Trees_Tree_Bark
     2100004: lambert1
@@ -6536,6 +6544,16 @@ ModelImporter:
     2100060: Wheeler_Truck_lambert12
     2100062: Wheeler_Truck_phong1
     2100064: Wheeler_Truck_lambert9
+    2100066: TentTan
+    2100068: lambert8
+    2100070: Trees2_Evergreen_Trees_Tree_Bark
+    2100072: wasteland_assets_safety2_lambert7
+    2100074: pasted__lambert8
+    2100076: Trees2_Tree_Bark
+    2100078: House2_lambert7
+    2100080: House2_lambert6
+    2100082: pasted__ground1
+    2100084: grass_n_road1_lambert4
     2300000: Cube_Cube.001
     2300002: grass_n_road:pPlane2
     2300004: pCube242
@@ -7034,6 +7052,8 @@ ModelImporter:
     2300990: pPlane318
     2300992: pPlane319
     2300994: Wheeler:Truck:pCylinder103
+    2300996: pasted__pCone5
+    2300998: wasteland_assets_safety2:pCube300
     3300000: Cube_Cube.001
     3300002: grass_n_road:pPlane2
     3300004: pCube242
@@ -7532,6 +7552,8 @@ ModelImporter:
     3300990: pPlane318
     3300992: pPlane319
     3300994: Wheeler:Truck:pCylinder103
+    3300996: pasted__pCone5
+    3300998: wasteland_assets_safety2:pCube300
     4300000: Trees:pPlane112
     4300002: Trees:pPlane113
     4300004: Trees:polySurface280
@@ -8030,6 +8052,8 @@ ModelImporter:
     4300990: pPlane317
     4300992: pPlane318
     4300994: pPlane319
+    4300996: wasteland_assets_safety2:pCube300
+    4300998: pasted__pCone5
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
