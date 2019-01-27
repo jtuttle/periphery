@@ -27,7 +27,7 @@ public class GameController : MonoBehaviour
         if(RV.transform.position.x > VictoryThreshold) {
             _gameOver = true;
             Player.SetActive(false);
-            RV.SetActive(false);
+            RV.GetComponent<RV>().enabled = false;
             VictoryScreen.SetActive(true);
         }
 
