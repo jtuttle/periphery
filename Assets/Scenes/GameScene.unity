@@ -333,7 +333,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 3031800825709947114}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 624176787}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b7d4e383ef8c4eedb019c9ea078f0c9, type: 3}
@@ -432,7 +432,18 @@ PrefabInstance:
       propertyPath: Music
       value: 
       objectReference: {fileID: 166522156}
-    m_RemovedComponents: []
+    - target: {fileID: 532917805972425687, guid: 43dc8d5602da84bdd9261b5f7bd58260,
+        type: 3}
+      propertyPath: BypassEffects
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 532917805972425687, guid: 43dc8d5602da84bdd9261b5f7bd58260,
+        type: 3}
+      propertyPath: Mute
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7069414391663033545, guid: 43dc8d5602da84bdd9261b5f7bd58260, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 43dc8d5602da84bdd9261b5f7bd58260, type: 3}
 --- !u!1001 &542462440
 PrefabInstance:
@@ -529,6 +540,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 446077806}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &624176787 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3031800824938045701, guid: 6c793fc878f06442e9459b043031963e,
+    type: 3}
+  m_PrefabInstance: {fileID: 3031800825709947114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!81 &624176788
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624176787}
+  m_Enabled: 1
 --- !u!1 &663847235 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6789081335795972325, guid: 6d32de2d09f9b438e99cb81c82ca84f5,
@@ -672,6 +697,18 @@ PrefabInstance:
       propertyPath: Plane
       value: 
       objectReference: {fileID: 1754715072}
+    - target: {fileID: 663847236, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
+      propertyPath: BypassListenerEffects
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 663847236, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
+      propertyPath: BypassReverbZones
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 663847236, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
+      propertyPath: DopplerLevel
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
 --- !u!1 &993144672
