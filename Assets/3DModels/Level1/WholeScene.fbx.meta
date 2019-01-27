@@ -3257,6 +3257,44 @@ ModelImporter:
     106502: group1
     106504: pasted__pCone5
     106506: wasteland_assets_safety2:pCube300
+    106508: group2
+    106510: pasted__pCube348
+    106512: pasted__pCube349
+    106514: pasted__pCylinder100
+    106516: pasted__pCylinder101
+    106518: pasted__pCylinder102
+    106520: pasted__pCylinder99
+    106522: pasted__polySurface425
+    106524: pasted__polySurface482
+    106526: pasted__polySurface483
+    106528: pasted__polySurface484
+    106530: pasted__polySurface485
+    106532: pasted__pPlane320
+    106534: pasted__pPlane321
+    106536: pasted__pPlane322
+    106538: pasted__pPlane323
+    106540: pasted__pPlane324
+    106542: pasted__transform3
+    106544: pasted__transform4
+    106546: pasted__transform5
+    106548: pasted__transform6
+    106550: pasted__transform7
+    106552: piece_truck:pCylinder98
+    106554: piece_truck:polySurface428
+    106556: piece_truck:polySurface429
+    106558: piece_truck:polySurface431
+    106560: piece_truck:polySurface432
+    106562: piece_truck:polySurface433
+    106564: piece_truck:polySurface434
+    106566: piece_truck:polySurface435
+    106568: piece_truck:polySurface436
+    106570: piece_truck:transform489
+    106572: piece_truck:transform490
+    106574: piece_truck:transform491
+    106576: piece_truck:transform492
+    106578: piece_truck:transform493
+    106580: piece_truck:transform494
+    106582: piece_truck:transform495
     400000: child_avatar_biglegs:pPlane1
     400002: child_avatar_biglegs:pPlane2
     400004: child_avatar_biglegs:pPlane3
@@ -6511,6 +6549,44 @@ ModelImporter:
     406502: group1
     406504: pasted__pCone5
     406506: wasteland_assets_safety2:pCube300
+    406508: group2
+    406510: pasted__pCube348
+    406512: pasted__pCube349
+    406514: pasted__pCylinder100
+    406516: pasted__pCylinder101
+    406518: pasted__pCylinder102
+    406520: pasted__pCylinder99
+    406522: pasted__polySurface425
+    406524: pasted__polySurface482
+    406526: pasted__polySurface483
+    406528: pasted__polySurface484
+    406530: pasted__polySurface485
+    406532: pasted__pPlane320
+    406534: pasted__pPlane321
+    406536: pasted__pPlane322
+    406538: pasted__pPlane323
+    406540: pasted__pPlane324
+    406542: pasted__transform3
+    406544: pasted__transform4
+    406546: pasted__transform5
+    406548: pasted__transform6
+    406550: pasted__transform7
+    406552: piece_truck:pCylinder98
+    406554: piece_truck:polySurface428
+    406556: piece_truck:polySurface429
+    406558: piece_truck:polySurface431
+    406560: piece_truck:polySurface432
+    406562: piece_truck:polySurface433
+    406564: piece_truck:polySurface434
+    406566: piece_truck:polySurface435
+    406568: piece_truck:polySurface436
+    406570: piece_truck:transform489
+    406572: piece_truck:transform490
+    406574: piece_truck:transform491
+    406576: piece_truck:transform492
+    406578: piece_truck:transform493
+    406580: piece_truck:transform494
+    406582: piece_truck:transform495
     2100000: Trees_Vegetation_Light
     2100002: Trees_Tree_Bark
     2100004: lambert1
@@ -6554,6 +6630,18 @@ ModelImporter:
     2100080: House2_lambert6
     2100082: pasted__ground1
     2100084: grass_n_road1_lambert4
+    2100086: wasteland_assets_safety3_Vegetation_Light
+    2100088: wasteland_assets_safety3_Tree_Bark
+    2100090: piece_truck_lambert10
+    2100092: piece_truck_lambert9
+    2100094: piece_truck_lambert14
+    2100096: piece_truck_lambert11
+    2100098: piece_truck_lambert13
+    2100100: piece_truck_lambert12
+    2100102: wasteland_assets_safety3_Rock_Dark
+    2100104: wasteland_assets_safety3_Rock_Light
+    2100106: Trees4_Evergreen_Trees_Vegetation_Light
+    2100108: Trees4_Evergreen_Trees_Tree_Bark
     2300000: Cube_Cube.001
     2300002: grass_n_road:pPlane2
     2300004: pCube242
@@ -7054,6 +7142,18 @@ ModelImporter:
     2300994: Wheeler:Truck:pCylinder103
     2300996: pasted__pCone5
     2300998: wasteland_assets_safety2:pCube300
+    2301000: pasted__pCube349
+    2301002: pasted__pCylinder100
+    2301004: pasted__pCylinder101
+    2301006: pasted__pCylinder102
+    2301008: pasted__polySurface425
+    2301010: pasted__polySurface485
+    2301012: pasted__pPlane320
+    2301014: pasted__pPlane321
+    2301016: pasted__pPlane322
+    2301018: pasted__pPlane323
+    2301020: pasted__pPlane324
+    2301022: piece_truck:polySurface436
     3300000: Cube_Cube.001
     3300002: grass_n_road:pPlane2
     3300004: pCube242
@@ -7554,6 +7654,18 @@ ModelImporter:
     3300994: Wheeler:Truck:pCylinder103
     3300996: pasted__pCone5
     3300998: wasteland_assets_safety2:pCube300
+    3301000: pasted__pCube349
+    3301002: pasted__pCylinder100
+    3301004: pasted__pCylinder101
+    3301006: pasted__pCylinder102
+    3301008: pasted__polySurface425
+    3301010: pasted__polySurface485
+    3301012: pasted__pPlane320
+    3301014: pasted__pPlane321
+    3301016: pasted__pPlane322
+    3301018: pasted__pPlane323
+    3301020: pasted__pPlane324
+    3301022: piece_truck:polySurface436
     4300000: Trees:pPlane112
     4300002: Trees:pPlane113
     4300004: Trees:polySurface280
@@ -8054,6 +8166,18 @@ ModelImporter:
     4300994: pPlane319
     4300996: wasteland_assets_safety2:pCube300
     4300998: pasted__pCone5
+    4301000: pasted__polySurface425
+    4301002: pasted__pCylinder100
+    4301004: pasted__pPlane320
+    4301006: pasted__pPlane321
+    4301008: pasted__pPlane322
+    4301010: pasted__pPlane323
+    4301012: pasted__pPlane324
+    4301014: pasted__polySurface485
+    4301016: pasted__pCylinder101
+    4301018: pasted__pCylinder102
+    4301020: pasted__pCube349
+    4301022: piece_truck:polySurface436
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
