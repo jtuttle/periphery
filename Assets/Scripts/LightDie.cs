@@ -9,6 +9,8 @@ public class LightDie : MonoBehaviour
 
     public float SecondsToLive;
 
+    public AudioSource WarningSound;
+
     [HideInInspector]
     public bool IsDead;
 
@@ -25,6 +27,14 @@ public class LightDie : MonoBehaviour
             _secondsOutside += Time.deltaTime;
         } else {
             _secondsOutside = 0;
+
+            if(WarningSound.isPlaying) {
+                WarningSound.Stop();
+            }
+        }
+
+        if(_secondsOutside >= 10 && !WarningSound.isPlaying) {
+            WarningSound.Play();
         }
 
         IsDead = (_secondsOutside >= SecondsToLive);
