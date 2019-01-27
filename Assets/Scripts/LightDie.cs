@@ -6,6 +6,7 @@ public class LightDie : MonoBehaviour
 {
     public Light spotLight;
     public GameObject RV;
+    public FixedFollow Camera;
 
     public float SecondsToLive;
 
@@ -31,10 +32,16 @@ public class LightDie : MonoBehaviour
             if(WarningSound.isPlaying) {
                 WarningSound.Stop();
             }
+
+            Camera.IsShaking = false;
         }
 
         if(_secondsOutside >= 10 && !WarningSound.isPlaying) {
             WarningSound.Play();
+        }
+
+        if(_secondsOutside >= 15) {
+            Camera.IsShaking = true;
         }
 
         IsDead = (_secondsOutside >= SecondsToLive);

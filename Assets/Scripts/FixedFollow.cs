@@ -7,6 +7,9 @@ public class FixedFollow : MonoBehaviour
     public GameObject Target;
 
     public float Damping = 1;
+    public float ShakeAmount = 0.1f;
+
+    public bool IsShaking = false;
 
     private float _zDiff;
 
@@ -17,6 +20,14 @@ public class FixedFollow : MonoBehaviour
 
     void Update()
     {
+        Follow();        
+
+        if(IsShaking) {
+            Shake();
+        }
+    }
+
+    private void Follow() {
         float x = Target.transform.position.x;
         float z = Target.transform.position.z + _zDiff;
 
@@ -24,5 +35,9 @@ public class FixedFollow : MonoBehaviour
         gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, desiredPosition, Time.deltaTime * Damping);
 
         gameObject.transform.LookAt(Target.transform);
+    }
+
+    private void Shake() {
+        gameObject.transform.localPosition += Random.insideUnitSphere * ShakeAmount;
     }
 }
