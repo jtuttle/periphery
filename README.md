@@ -1,6 +1,6 @@
 # Periphery
 
-* Play online 
+* [Play online ](https://jtuttle.github.io/periphery/)
 * Download Mac
 * Download PC
 
