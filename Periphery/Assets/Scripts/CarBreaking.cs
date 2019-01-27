@@ -20,7 +20,6 @@ public class CarBreaking : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Trigered");
             breakCar = true;
         }
     }
@@ -29,7 +28,6 @@ public class CarBreaking : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Untriggered");
             breakCar = false;
         }
     }
@@ -37,7 +35,6 @@ public class CarBreaking : MonoBehaviour
     {
         if(breakCar == true)
         {
-            Debug.Log("BreakCar True");
             if (timer > 0)
             {
                 timer -= Time.deltaTime;
