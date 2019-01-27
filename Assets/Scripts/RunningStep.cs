@@ -8,6 +8,6 @@ public class RunningStep : MonoBehaviour
 
     public void OnStep()
     {
-        AudioSource.PlayClipAtPoint(StepSound, transform.position, 0.3f);
+        AudioSource.PlayClipAtPoint(StepSound, transform.position, 0.5f);
     }
 }
