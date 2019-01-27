@@ -1,5 +1,17 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &63924398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036294065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45dfc415a474943ad865632108d671e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &961438733204186460
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,8 +106,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotLight: {fileID: 0}
   RV: {fileID: 0}
+  Camera: {fileID: 0}
   SecondsToLive: 20
   WarningSound: {fileID: 532917805972425687}
+  Music: {fileID: 0}
   IsDead: 0
 --- !u!82 &532917805972425687
 AudioSource:
@@ -107,7 +121,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1b57068e8ba704ead8cadd5cb46ce9fe, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9bf6d78b51e70476c9f1385b16afa6a2, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -382,6 +396,12 @@ PrefabInstance:
       objectReference: {fileID: 1036192721}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94b3f13726f794d48b006c72a69cf3e3, type: 3}
+--- !u!1 &1036294065 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100070, guid: 94b3f13726f794d48b006c72a69cf3e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1036325207}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1036192721 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400006, guid: 94b3f13726f794d48b006c72a69cf3e3,
@@ -436,15 +456,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1036325207}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1036192745 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400062, guid: 94b3f13726f794d48b006c72a69cf3e3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1036325207}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1036192657 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400070, guid: 94b3f13726f794d48b006c72a69cf3e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1036325207}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1036192663 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400064, guid: 94b3f13726f794d48b006c72a69cf3e3,
     type: 3}
   m_PrefabInstance: {fileID: 1036325207}
   m_PrefabAsset: {fileID: 0}
@@ -550,9 +570,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1036325207}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1036192663 stripped
+--- !u!4 &1036192745 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 400064, guid: 94b3f13726f794d48b006c72a69cf3e3,
+  m_CorrespondingSourceObject: {fileID: 400062, guid: 94b3f13726f794d48b006c72a69cf3e3,
     type: 3}
   m_PrefabInstance: {fileID: 1036325207}
   m_PrefabAsset: {fileID: 0}

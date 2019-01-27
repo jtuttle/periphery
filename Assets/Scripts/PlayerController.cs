@@ -65,8 +65,7 @@ public class PlayerController : MonoBehaviour {
 
             item.transform.parent = gameObject.transform;
 
-            Vector3 pos = gameObject.transform.position;
-            item.transform.position = pos;//new Vector3(pos.x, pos.y, pos.z);
+            item.transform.position = gameObject.transform.position;
             item.transform.localPosition = new Vector3(0, 0, 0.5f);
             
             ItemGlow itemGlow = item.GetComponent<ItemGlow>();

@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
     public GameObject VictoryScreen;
     public GameObject Player;
     public GameObject RV;
+    public FixedFollow Camera;
 
     public float VictoryThreshold = 200.0f;
 
@@ -32,9 +33,20 @@ public class GameController : MonoBehaviour
 
         if(Player.GetComponent<LightDie>().IsDead) {
             _gameOver = true;
-            Player.SetActive(false);
-            RV.SetActive(false);
-            GameOverScreen.SetActive(true);
+
+            Player.GetComponent<PlayerController>().enabled = false;
+
+            GameObject playerModel = Player.transform.GetChild(0).gameObject;
+            playerModel.GetComponent<DeathComplete>().DeathCompleteEvent += OnDeathComplete;
+            playerModel.GetComponent<Animator>().SetBool("Dead", true);
+
+            Camera.IsShaking = false;
         }
+    }
+
+    void OnDeathComplete() {
+        Player.SetActive(false);
+        RV.SetActive(false);
+        GameOverScreen.SetActive(true);
     }
 }
