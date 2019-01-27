@@ -1,10 +1,5 @@
 # Periphery
 
-We made this game durring the 2019 Global Game Jam. There are 3 ways to play it:
-* Download for Mac
-* Download for Windows
-* Web Version (Chrome only)
-
 Enjoy!
 
 # Credits
