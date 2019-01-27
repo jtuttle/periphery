@@ -2,7 +2,7 @@
 
 * [Play online ](https://jtuttle.github.io/periphery/) (Chrome only)
 * [Download Mac](https://github.com/jtuttle/periphery/blob/master/Downloads/Periphery.app.zip)
-* [Download PC] (https://github.com/jtuttle/periphery/blob/master/Downloads/Periphery.exe.zip) - Unzip and run Periphery.exe
+* [Download PC](https://github.com/jtuttle/periphery/blob/master/Downloads/Periphery.exe.zip) - Unzip and run Periphery.exe
 
 Enjoy!
 
