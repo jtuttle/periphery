@@ -17,9 +17,15 @@ public class LightDie : MonoBehaviour
     [HideInInspector]
     public bool IsDead;
 
+    private float _originalMusicVolume;
     private float _secondsOutside;
 
     private const float EDGE_FACTOR = 0.8393f;
+
+    
+    void Start() {
+        _originalMusicVolume = Music.volume;
+    }
 
     void Update()
     {
@@ -37,7 +43,7 @@ public class LightDie : MonoBehaviour
                 WarningSound.Stop();
             }
 
-            Music.volume = 1;
+            Music.volume = _originalMusicVolume;
 
             Camera.IsShaking = false;
         }

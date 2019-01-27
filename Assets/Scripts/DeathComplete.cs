@@ -6,7 +6,7 @@ public class DeathComplete : MonoBehaviour
 {
     public delegate void EventHandler();
     public event EventHandler DeathCompleteEvent;
-    public void OnComplete(string s) {
+    public void OnComplete() {
         if(this.DeathCompleteEvent != null) {
             DeathCompleteEvent();
         }
