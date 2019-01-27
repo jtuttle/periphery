@@ -43,8 +43,7 @@ public class PlayerController : MonoBehaviour {
 
             if (itemType == ItemEnum.BATTERY)
             {
-                StartCoroutine(ExpandSpotlight(0.8f, 0.5f));
-                
+                spotLight.GetComponent<LightOverTime>().IncreaseLight();
                 GameObject.Destroy(item);
                 item = null;
             }
@@ -73,16 +72,6 @@ public class PlayerController : MonoBehaviour {
             itemGlow.enabled = false;
 
             item.GetComponent<Collider>().enabled = false;
-        }
-    }
-
-    IEnumerator ExpandSpotlight(float stepAmount, float duration) {
-        float elapsed = 0;
-
-        while(elapsed < duration) {
-            spotLight.GetComponent<Light>().spotAngle += stepAmount;
-            elapsed += Time.deltaTime;
-            yield return null;
         }
     }
 }
