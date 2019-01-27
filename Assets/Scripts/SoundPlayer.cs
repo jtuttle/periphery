@@ -5,11 +5,12 @@ using UnityEngine;
 public class SoundPlayer : MonoBehaviour
 {
     public AudioSource spookySounds;
+    public List<AudioClip> spookyList;
     public AudioSource whiteNoise;
     public AudioSource Music;
-    public Light spotLight;
     public GameObject RV;
-    float spookyCounter = 0;
+    public float spookyCounter = 90;
+    public float countMax;
 
 
     // Start is called before the first frame update
@@ -23,11 +24,28 @@ public class SoundPlayer : MonoBehaviour
     void Update()
     {
 
-        whiteNoise.volume = Vector3.Distance(RV.transform.position, gameObject.transform.position);
-        spookyCounter += Time.deltaTime;
-        if (spookyCounter > (Mathf.Lerp(100, 1, Mathf.InverseLerp(1, 100, Vector3.Distance(RV.transform.position, gameObject.transform.position)))))
+        float dist = Vector3.Distance(RV.transform.position, gameObject.transform.position);
+        countMax = Vector3.Distance(RV.transform.position, gameObject.transform.position);
+        if (dist > 100)
         {
-            spookySounds.volume = Vector3.Distance(RV.transform.position, gameObject.transform.position);
+            dist = 100;
+        }
+
+        if (countMax > 100)
+        {
+            countMax = 100;
+        }
+
+        whiteNoise.volume = dist/100;
+
+        spookyCounter -= Time.deltaTime;
+        if (spookyCounter < countMax && spookySounds.isPlaying == false)
+        {
+            Debug.Log("spookyPlay");
+            spookySounds.volume = dist / 100;
+            spookySounds.clip = spookyList[Random.Range(0, spookyList.Count)];
+            spookySounds.Play();
+            spookyCounter = 100;
         }
 
 
