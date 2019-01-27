@@ -12,6 +12,8 @@ public class LightDie : MonoBehaviour
 
     public AudioSource WarningSound;
 
+    public AudioSource Music;
+
     [HideInInspector]
     public bool IsDead;
 
@@ -33,10 +35,13 @@ public class LightDie : MonoBehaviour
                 WarningSound.Stop();
             }
 
+            Music.volume = 1;
+
             Camera.IsShaking = false;
         }
 
         if(_secondsOutside >= 10 && !WarningSound.isPlaying) {
+            Music.volume = 0;
             WarningSound.Play();
         }
 
