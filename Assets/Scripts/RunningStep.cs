@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class RunningStep : MonoBehaviour
 {
+    public AudioClip StepSound;
+
     public void OnStep()
     {
-        Debug.Log("STEP");    
+        AudioSource.PlayClipAtPoint(StepSound, transform.position, 0.3f);
     }
 }

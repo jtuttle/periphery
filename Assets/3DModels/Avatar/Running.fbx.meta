@@ -136,7 +136,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.3015873
+      - time: 0.2570753
         functionName: OnStep
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: c94aa686e914245b1a15d198fc00c810,
@@ -144,7 +144,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.56349206
+      - time: 0.5089466
         functionName: OnStep
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: c94aa686e914245b1a15d198fc00c810,
@@ -152,7 +152,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.8174603
+      - time: 0.7550249
         functionName: OnStep
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: c94aa686e914245b1a15d198fc00c810,
@@ -160,7 +160,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.003968254
+      - time: 1
         functionName: OnStep
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: c94aa686e914245b1a15d198fc00c810,

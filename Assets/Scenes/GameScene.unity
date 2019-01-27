@@ -270,12 +270,12 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166522153}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 36c383e8c0e264ad7add818388c54872, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -779,6 +779,10 @@ PrefabInstance:
       propertyPath: Music
       value: 
       objectReference: {fileID: 166522156}
+    - target: {fileID: 1036294065, guid: 43dc8d5602da84bdd9261b5f7bd58260, type: 3}
+      propertyPath: m_Name
+      value: Animations
+      objectReference: {fileID: 0}
     - target: {fileID: 578091571651723644, guid: 43dc8d5602da84bdd9261b5f7bd58260,
         type: 3}
       propertyPath: spotLight
@@ -789,6 +793,30 @@ PrefabInstance:
       propertyPath: RV
       value: 
       objectReference: {fileID: 874121158}
+    - target: {fileID: 1440221327, guid: 43dc8d5602da84bdd9261b5f7bd58260, type: 3}
+      propertyPath: StepSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1440221327, guid: 43dc8d5602da84bdd9261b5f7bd58260, type: 3}
+      propertyPath: StepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 212cd5727a3c8422594503cac64d32f9, type: 3}
+    - target: {fileID: 1440221327, guid: 43dc8d5602da84bdd9261b5f7bd58260, type: 3}
+      propertyPath: StepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 13cc71c747d16429f84ec427fba1438e, type: 3}
+    - target: {fileID: 1440221327, guid: 43dc8d5602da84bdd9261b5f7bd58260, type: 3}
+      propertyPath: StepSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4122157e0f9b24a7bbaffec86a361a0a, type: 3}
+    - target: {fileID: 1440221327, guid: 43dc8d5602da84bdd9261b5f7bd58260, type: 3}
+      propertyPath: StepSounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: a313e4377cc644abf80a87c2d4a4eaa1, type: 3}
+    - target: {fileID: 1440221327, guid: 43dc8d5602da84bdd9261b5f7bd58260, type: 3}
+      propertyPath: StepSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 13cc71c747d16429f84ec427fba1438e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43dc8d5602da84bdd9261b5f7bd58260, type: 3}
 --- !u!1 &479449980 stripped
@@ -840,6 +868,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303624343236704799, guid: bf6e7efcb4d4b4191ad779f132cf278c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4168788672130819051, guid: bf6e7efcb4d4b4191ad779f132cf278c,
         type: 3}
@@ -916,11 +949,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -11.33
       objectReference: {fileID: 0}
-    - target: {fileID: 6303624343236704799, guid: bf6e7efcb4d4b4191ad779f132cf278c,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4168788672166285535, guid: bf6e7efcb4d4b4191ad779f132cf278c,
         type: 3}
       propertyPath: m_RootOrder
@@ -955,6 +983,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.02
+      objectReference: {fileID: 0}
     - target: {fileID: 4168788672163996937, guid: bf6e7efcb4d4b4191ad779f132cf278c,
         type: 3}
       propertyPath: m_Enabled
