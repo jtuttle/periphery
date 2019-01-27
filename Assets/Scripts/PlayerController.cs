@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour {
                 GameObject.Destroy(item);
                 item = null;
 
-                AudioSource.PlayClipAtPoint(BatteryDropoff, transform.position, 0.4f);
+                AudioSource.PlayClipAtPoint(BatteryDropoff, transform.position);
             }
             else if(itemType == ItemEnum.TIRE)
             {
@@ -81,7 +81,7 @@ public class PlayerController : MonoBehaviour {
             ItemEnum itemType = item.gameObject.GetComponent<ItemType>().ItemEnum;
 
             if(itemType == ItemEnum.BATTERY) {
-                AudioSource.PlayClipAtPoint(BatteryPickup, transform.position, 0.4f);
+                AudioSource.PlayClipAtPoint(BatteryPickup, transform.position);
             }
         }
     }
