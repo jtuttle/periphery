@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
     public GameObject RV;
     public FixedFollow Camera;
 
-    public float VictoryThreshold = 200.0f;
+    public float VictoryThreshold;
 
     private bool _gameOver = false;
 
