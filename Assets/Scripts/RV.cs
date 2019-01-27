@@ -14,7 +14,7 @@ public class RV : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AudioSource.PlayClipAtPoint(EngineStart, transform.position, 0.5f);
+        AudioSource.PlayClipAtPoint(EngineStart, transform.position);
         StartCoroutine(DelayedRVStart());
     }
 
