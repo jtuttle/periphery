@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6188278750460095268}
   - component: {fileID: 6428088156825551499}
+  - component: {fileID: 184529134774151323}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -45,8 +46,20 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 1, z: 1}
+  m_Size: {x: 4, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &184529134774151323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184529134774151321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db0ae7f703d0c4d638151dd3c031c8e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3486052350850417683
 GameObject:
   m_ObjectHideFlags: 0

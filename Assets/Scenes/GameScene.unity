@@ -295,11 +295,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 961438733204186461, guid: 43dc8d5602da84bdd9261b5f7bd58260,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 961438733204186465, guid: 43dc8d5602da84bdd9261b5f7bd58260,
         type: 3}
       propertyPath: spotLight
@@ -310,11 +305,6 @@ PrefabInstance:
       propertyPath: RV
       value: 
       objectReference: {fileID: 663847235}
-    - target: {fileID: 961438733204186465, guid: 43dc8d5602da84bdd9261b5f7bd58260,
-        type: 3}
-      propertyPath: speed
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 693618895, guid: 43dc8d5602da84bdd9261b5f7bd58260, type: 3}
       propertyPath: spotLight
       value: 
