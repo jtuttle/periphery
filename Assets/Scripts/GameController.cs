@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour
     public GameObject Player;
     public GameObject RV;
 
-    private float _victoryThreshold = 100.0f;
+    public float VictoryThreshold = 200.0f;
 
     private bool _gameOver = false;
 
@@ -23,7 +23,7 @@ public class GameController : MonoBehaviour
             return;
         }
 
-        if(RV.transform.position.x > _victoryThreshold) {
+        if(RV.transform.position.x > VictoryThreshold) {
             _gameOver = true;
             Player.SetActive(false);
             RV.SetActive(false);
