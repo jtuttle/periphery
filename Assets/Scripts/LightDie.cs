@@ -25,7 +25,6 @@ public class LightDie : MonoBehaviour
     
     void Start() {
         _originalMusicVolume = Music.volume;
-        Debug.Log(_originalMusicVolume);
     }
 
     void Update()
