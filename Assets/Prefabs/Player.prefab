@@ -23,9 +23,9 @@ GameObject:
   - component: {fileID: 961438733204186464}
   - component: {fileID: 961438733204186461}
   - component: {fileID: 693618894}
+  - component: {fileID: 532917805972425687}
   - component: {fileID: 961438733204186465}
   - component: {fileID: 693618895}
-  - component: {fileID: 532917805972425687}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -77,40 +77,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!114 &961438733204186465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961438733204186460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5661b5230f9e4014b6c72a6fc05995c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.1
-  spotLight: {fileID: 0}
-  RV: {fileID: 0}
---- !u!114 &693618895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961438733204186460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da9b7ded75f0a48e293ac7efb3e137cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spotLight: {fileID: 0}
-  RV: {fileID: 0}
-  Camera: {fileID: 0}
-  SecondsToLive: 20
-  WarningSound: {fileID: 532917805972425687}
-  Music: {fileID: 0}
-  IsDead: 0
 --- !u!82 &532917805972425687
 AudioSource:
   m_ObjectHideFlags: 0
@@ -207,6 +173,42 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &961438733204186465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961438733204186460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5661b5230f9e4014b6c72a6fc05995c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.1
+  spotLight: {fileID: 0}
+  RV: {fileID: 0}
+  BatteryPickup: {fileID: 8300000, guid: 3b1da1fa793db493ca730b726246950b, type: 3}
+  BatteryDropoff: {fileID: 8300000, guid: 244dc0d5f0d48407b819d1858ee065aa, type: 3}
+--- !u!114 &693618895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961438733204186460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da9b7ded75f0a48e293ac7efb3e137cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotLight: {fileID: 0}
+  RV: {fileID: 0}
+  Camera: {fileID: 0}
+  SecondsToLive: 20
+  WarningSound: {fileID: 532917805972425687}
+  Music: {fileID: 0}
+  IsDead: 0
 --- !u!1001 &1036325207
 PrefabInstance:
   m_ObjectHideFlags: 0

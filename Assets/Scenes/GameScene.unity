@@ -172,7 +172,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 33a46141dc0dc4ca1a259ea8ee507984, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2c60ec794006a4ca0a01e95051f3f41a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1088,6 +1088,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 3031800824938045721, guid: 6c793fc878f06442e9459b043031963e,
+        type: 3}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 546823237}
+    - target: {fileID: 3031800824938045721, guid: 6c793fc878f06442e9459b043031963e,
+        type: 3}
+      propertyPath: ShakeAmount
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3031800824938045720, guid: 6c793fc878f06442e9459b043031963e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1147,16 +1157,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_HDR
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3031800824938045721, guid: 6c793fc878f06442e9459b043031963e,
-        type: 3}
-      propertyPath: Target
-      value: 
-      objectReference: {fileID: 546823237}
-    - target: {fileID: 3031800824938045721, guid: 6c793fc878f06442e9459b043031963e,
-        type: 3}
-      propertyPath: ShakeAmount
-      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3031800824938045726, guid: 6c793fc878f06442e9459b043031963e, type: 3}

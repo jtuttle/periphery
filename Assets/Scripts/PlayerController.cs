@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour {
     public GameObject spotLight;
     public GameObject RV;
 
+    public AudioClip BatteryPickup;
+    public AudioClip BatteryDropoff;
+
     void Start ()
     {
         
@@ -46,6 +49,8 @@ public class PlayerController : MonoBehaviour {
                 spotLight.GetComponent<LightOverTime>().IncreaseLight();
                 GameObject.Destroy(item);
                 item = null;
+
+                AudioSource.PlayClipAtPoint(BatteryDropoff, transform.position);
             }
             else if(itemType == ItemEnum.TIRE)
             {
@@ -72,6 +77,12 @@ public class PlayerController : MonoBehaviour {
             itemGlow.enabled = false;
 
             item.GetComponent<Collider>().enabled = false;
+
+            ItemEnum itemType = item.gameObject.GetComponent<ItemType>().ItemEnum;
+
+            if(itemType == ItemEnum.BATTERY) {
+                AudioSource.PlayClipAtPoint(BatteryPickup, transform.position);
+            }
         }
     }
 }
