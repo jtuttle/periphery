@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class RV : MonoBehaviour
 {
-    public float speed;
+    public float MaxSpeed;
 
     public AudioClip EngineStart;
     public AudioSource EngineRunning;
     public AudioSource GameMusic;
 
-    private bool _moving = false;
+    private float _speed = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -22,10 +22,8 @@ public class RV : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_moving) {
-            Vector3 pos = transform.position;
-            transform.position = new Vector3(pos.x + speed, pos.y, pos.z);
-        }
+        Vector3 pos = transform.position;
+        transform.position = new Vector3(pos.x + _speed, pos.y, pos.z);
     }
 
     IEnumerator DelayedRVStart() {
@@ -34,6 +32,19 @@ public class RV : MonoBehaviour
         GameMusic.Play();
         EngineRunning.Play();
         
-        _moving = true;
+        StartCoroutine(StartRV(0.01f, 3f));
+    }
+
+    IEnumerator StartRV(float stepAmount, float duration) {
+        float elapsed = 0;
+
+        while(elapsed < duration) {
+            _speed = Mathf.Lerp(0, MaxSpeed, elapsed / duration);
+            elapsed += Time.deltaTime;
+
+            yield return null;
+
+            _speed = MaxSpeed;
+        }
     }
 }
