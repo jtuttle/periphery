@@ -219,7 +219,7 @@ MonoBehaviour:
   spotLight: {fileID: 0}
   RV: {fileID: 0}
   Camera: {fileID: 0}
-  SecondsToLive: 20
+  SecondsToLive: 18
   WarningSound: {fileID: 532917805972425687}
   Music: {fileID: 0}
   IsDead: 0
