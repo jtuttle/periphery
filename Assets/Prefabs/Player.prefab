@@ -96,7 +96,7 @@ AudioSource:
   Mute: 1
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -251,15 +251,15 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1aa59805eaaca4faba324a63a3712c0c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 40
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -383,10 +383,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spookySounds: {fileID: 6731527424600616411}
+  spookyList:
+  - {fileID: 8300000, guid: b9f4c28a3e1514b16bbde847dfc88e8a, type: 3}
+  - {fileID: 8300000, guid: 8f4cbf6e2c9ca4bb7aeeefc831b452e4, type: 3}
+  - {fileID: 8300000, guid: 57f76e8381b1e4cae8a14287ac164bdc, type: 3}
+  - {fileID: 8300000, guid: a66bd487581d34a85841ba73b9fe2e82, type: 3}
+  - {fileID: 8300000, guid: 0e506305b67ae4564bfa49fb2a1ef0ca, type: 3}
+  - {fileID: 8300000, guid: ec290ee7f353142068556bf980f15d52, type: 3}
+  - {fileID: 8300000, guid: da0f07ce68c2b499d94e3348ec9b18b3, type: 3}
   whiteNoise: {fileID: 4919612814934497964}
   Music: {fileID: 0}
-  spotLight: {fileID: 0}
   RV: {fileID: 0}
+  spookyCounter: 0
+  countMax: 0
 --- !u!1 &5561273936211711300
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,7 +445,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 20
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -521,6 +530,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 961438733204186464}
     m_Modifications:
+    - target: {fileID: 100070, guid: 94b3f13726f794d48b006c72a69cf3e3, type: 3}
+      propertyPath: m_Name
+      value: Running
+      objectReference: {fileID: 0}
     - target: {fileID: 400070, guid: 94b3f13726f794d48b006c72a69cf3e3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -576,10 +589,6 @@ PrefabInstance:
     - target: {fileID: 400070, guid: 94b3f13726f794d48b006c72a69cf3e3, type: 3}
       propertyPath: m_LocalScale.z
       value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 100070, guid: 94b3f13726f794d48b006c72a69cf3e3, type: 3}
-      propertyPath: m_Name
-      value: Running
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 94b3f13726f794d48b006c72a69cf3e3, type: 3}
       propertyPath: m_Controller
