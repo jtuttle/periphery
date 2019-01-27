@@ -42,8 +42,8 @@ public class SoundPlayer : MonoBehaviour
         if (spookyCounter < countMax && spookySounds.isPlaying == false)
         {
             Debug.Log("spookyPlay");
-            spookySounds.volume = dist / 100;
-            spookySounds.clip = spookyList[Random.Range(0, spookyList.Count)];
+            spookySounds.volume = dist/2/100;
+            spookySounds.clip = spookyList[Random.Range(1, spookyList.Count)];
             spookySounds.Play();
             spookyCounter = 100;
         }
