@@ -146,6 +146,7 @@ MonoBehaviour:
   VictoryScreen: {fileID: 993144672}
   Player: {fileID: 546823237}
   RV: {fileID: 663847235}
+  Camera: {fileID: 397076293}
   VictoryThreshold: 200
 --- !u!4 &166522155
 Transform:
@@ -358,7 +359,7 @@ PrefabInstance:
     - target: {fileID: 961438733204186464, guid: 43dc8d5602da84bdd9261b5f7bd58260,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.034
       objectReference: {fileID: 0}
     - target: {fileID: 961438733204186464, guid: 43dc8d5602da84bdd9261b5f7bd58260,
         type: 3}
@@ -431,11 +432,6 @@ PrefabInstance:
       propertyPath: Music
       value: 
       objectReference: {fileID: 166522156}
-    - target: {fileID: 532917805972425687, guid: 43dc8d5602da84bdd9261b5f7bd58260,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 9bf6d78b51e70476c9f1385b16afa6a2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43dc8d5602da84bdd9261b5f7bd58260, type: 3}
 --- !u!1001 &542462440
@@ -671,20 +667,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6978195688889440327, guid: 6d32de2d09f9b438e99cb81c82ca84f5,
-        type: 3}
-      propertyPath: m_SpotAngle
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 6978195688889440327, guid: 6d32de2d09f9b438e99cb81c82ca84f5,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1571010412, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
-      propertyPath: speed
-      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 761877870, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
       propertyPath: Plane
@@ -1099,7 +1081,7 @@ PrefabInstance:
     - target: {fileID: 3031800824938045701, guid: 6c793fc878f06442e9459b043031963e,
         type: 3}
       propertyPath: m_Name
-      value: FollowCamera
+      value: Camera
       objectReference: {fileID: 0}
     - target: {fileID: 3031800824938045720, guid: 6c793fc878f06442e9459b043031963e,
         type: 3}

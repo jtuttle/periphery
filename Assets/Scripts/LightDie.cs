@@ -23,6 +23,8 @@ public class LightDie : MonoBehaviour
 
     void Update()
     {
+        if(IsDead) { return; }
+
         float edge = spotLight.GetComponent<LightRadius>().radius * EDGE_FACTOR;
         float distance = Vector3.Distance(RV.transform.position, gameObject.transform.position);
 
