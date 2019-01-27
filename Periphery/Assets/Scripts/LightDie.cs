@@ -48,12 +48,12 @@ public class LightDie : MonoBehaviour
             Camera.IsShaking = false;
         }
 
-        if(_secondsOutside >= 10 && !WarningSound.isPlaying) {
+        if(_secondsOutside >= (SecondsToLive - 10) && !WarningSound.isPlaying) {
             Music.volume = 0;
             WarningSound.Play();
         }
 
-        if(_secondsOutside >= 15) {
+        if(_secondsOutside >= (SecondsToLive - 5)) {
             Camera.IsShaking = true;
         }
 
