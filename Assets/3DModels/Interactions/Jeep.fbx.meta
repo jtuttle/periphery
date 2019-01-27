@@ -16,6 +16,22 @@ ModelImporter:
     100020: Truck:transform491
     100022: Truck:transform492
     100024: Truck:transform493
+    100026: piece_truck:pCylinder98
+    100028: piece_truck:polySurface428
+    100030: piece_truck:polySurface429
+    100032: piece_truck:polySurface431
+    100034: piece_truck:polySurface432
+    100036: piece_truck:polySurface433
+    100038: piece_truck:polySurface434
+    100040: piece_truck:polySurface435
+    100042: piece_truck:polySurface436
+    100044: piece_truck:transform489
+    100046: piece_truck:transform490
+    100048: piece_truck:transform491
+    100050: piece_truck:transform492
+    100052: piece_truck:transform493
+    100054: piece_truck:transform494
+    100056: piece_truck:transform495
     400000: //RootNode
     400002: Truck:pCube300
     400004: Truck:pCube301
@@ -29,10 +45,35 @@ ModelImporter:
     400020: Truck:transform491
     400022: Truck:transform492
     400024: Truck:transform493
+    400026: piece_truck:pCylinder98
+    400028: piece_truck:polySurface428
+    400030: piece_truck:polySurface429
+    400032: piece_truck:polySurface431
+    400034: piece_truck:polySurface432
+    400036: piece_truck:polySurface433
+    400038: piece_truck:polySurface434
+    400040: piece_truck:polySurface435
+    400042: piece_truck:polySurface436
+    400044: piece_truck:transform489
+    400046: piece_truck:transform490
+    400048: piece_truck:transform491
+    400050: piece_truck:transform492
+    400052: piece_truck:transform493
+    400054: piece_truck:transform494
+    400056: piece_truck:transform495
     2100000: lambert1
+    2100002: piece_truck_lambert9
+    2100004: piece_truck_lambert10
+    2100006: piece_truck_lambert12
+    2100008: piece_truck_lambert11
+    2100010: piece_truck_lambert14
+    2100012: piece_truck_lambert13
     2300000: Truck:pCube303
+    2300002: piece_truck:polySurface436
     3300000: Truck:pCube303
+    3300002: piece_truck:polySurface436
     4300000: Truck:pCube303
+    4300002: piece_truck:polySurface436
   externalObjects: {}
   materials:
     importMaterials: 1
