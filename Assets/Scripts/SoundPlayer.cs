@@ -17,7 +17,6 @@ public class SoundPlayer : MonoBehaviour
     void Start()
     {
 
-
     }
 
     // Update is called once per frame
@@ -41,7 +40,6 @@ public class SoundPlayer : MonoBehaviour
         spookyCounter -= Time.deltaTime;
         if (spookyCounter < countMax && spookySounds.isPlaying == false)
         {
-            Debug.Log("spookyPlay");
             spookySounds.volume = dist/2/100;
             spookySounds.clip = spookyList[Random.Range(1, spookyList.Count)];
             spookySounds.Play();
