@@ -783,6 +783,14 @@ PrefabInstance:
       propertyPath: DopplerLevel
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 663847236, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
+      propertyPath: m_Volume
+      value: 0.105
+      objectReference: {fileID: 0}
+    - target: {fileID: 663847236, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
+      propertyPath: Priority
+      value: 181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
 --- !u!1 &874121158 stripped
@@ -1200,6 +1208,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 3031800824938045721, guid: 6c793fc878f06442e9459b043031963e,
+        type: 3}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 546823237}
     - target: {fileID: 3031800824938045720, guid: 6c793fc878f06442e9459b043031963e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1255,11 +1268,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3031800824938045721, guid: 6c793fc878f06442e9459b043031963e,
-        type: 3}
-      propertyPath: Target
-      value: 
-      objectReference: {fileID: 546823237}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c793fc878f06442e9459b043031963e, type: 3}
 --- !u!1001 &7164362936487764006
