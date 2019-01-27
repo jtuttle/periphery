@@ -35,6 +35,7 @@ public class GameController : MonoBehaviour
             _gameOver = true;
 
             Player.GetComponent<PlayerController>().enabled = false;
+            RV.SetActive(false);
 
             GameObject playerModel = Player.transform.GetChild(0).gameObject;
             playerModel.GetComponent<DeathComplete>().DeathCompleteEvent += OnDeathComplete;
@@ -46,7 +47,6 @@ public class GameController : MonoBehaviour
 
     void OnDeathComplete() {
         Player.SetActive(false);
-        RV.SetActive(false);
         GameOverScreen.SetActive(true);
     }
 }
