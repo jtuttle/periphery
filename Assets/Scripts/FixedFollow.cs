@@ -12,15 +12,20 @@ public class FixedFollow : MonoBehaviour
     public bool IsShaking = false;
 
     private float _zDiff;
+    private Vector3 _up;
 
     void Start()
     {
         _zDiff = gameObject.transform.position.z - Target.transform.position.z;
+        _up = transform.up;
+
+        //gameObject.transform.LookAt(Target.transform);
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        Follow();        
+        Follow();
+        LookAt();
 
         if(IsShaking) {
             Shake();
@@ -33,8 +38,12 @@ public class FixedFollow : MonoBehaviour
 
         Vector3 desiredPosition = new Vector3(x, gameObject.transform.position.y, z);
         gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, desiredPosition, Time.deltaTime * Damping);
+    }
 
-        gameObject.transform.LookAt(Target.transform);
+    private void LookAt() {
+        Vector3 direction = Target.transform.position - transform.position;
+        Quaternion toRotation = Quaternion.LookRotation(direction, _up);
+        transform.rotation = Quaternion.Lerp(transform.rotation, toRotation, Time.deltaTime * Damping);
     }
 
     private void Shake() {
