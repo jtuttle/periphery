@@ -1,6 +1,6 @@
 # Periphery
 
-* [Play online ](https://jtuttle.github.io/periphery/)
+* [Play online ](https://jtuttle.github.io/periphery/) (Chrome only)
 * Download Mac
 * Download PC
 
