@@ -27,7 +27,7 @@ public class SoundPlayer : MonoBehaviour
         spookyCounter += Time.deltaTime;
         if (spookyCounter > (Mathf.Lerp(100, 1, Mathf.InverseLerp(1, 100, Vector3.Distance(RV.transform.position, gameObject.transform.position)))))
         {
-
+            spookySounds.volume = Vector3.Distance(RV.transform.position, gameObject.transform.position);
         }
 
 
