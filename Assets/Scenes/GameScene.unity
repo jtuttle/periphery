@@ -1132,26 +1132,6 @@ PrefabInstance:
       propertyPath: Plane
       value: 
       objectReference: {fileID: 1754715072}
-    - target: {fileID: 663847236, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
-      propertyPath: BypassListenerEffects
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 663847236, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
-      propertyPath: BypassReverbZones
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 663847236, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
-      propertyPath: DopplerLevel
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 663847236, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
-      propertyPath: m_Volume
-      value: 0.105
-      objectReference: {fileID: 0}
-    - target: {fileID: 663847236, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
-      propertyPath: Priority
-      value: 181
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d32de2d09f9b438e99cb81c82ca84f5, type: 3}
 --- !u!1 &874121158 stripped
@@ -1931,17 +1911,17 @@ PrefabInstance:
     - target: {fileID: 6188278750460095268, guid: d8628bd7c5e7a4890905ef169355301f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.99
+      value: 7.8
       objectReference: {fileID: 0}
     - target: {fileID: 6188278750460095268, guid: d8628bd7c5e7a4890905ef169355301f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.95041
       objectReference: {fileID: 0}
     - target: {fileID: 6188278750460095268, guid: d8628bd7c5e7a4890905ef169355301f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.47
+      value: 3.1
       objectReference: {fileID: 0}
     - target: {fileID: 6188278750460095268, guid: d8628bd7c5e7a4890905ef169355301f,
         type: 3}
@@ -1981,6 +1961,11 @@ PrefabInstance:
     - target: {fileID: 6188278750460095268, guid: d8628bd7c5e7a4890905ef169355301f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428088156825551499, guid: d8628bd7c5e7a4890905ef169355301f,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
