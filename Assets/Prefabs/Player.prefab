@@ -24,6 +24,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c94aa686e914245b1a15d198fc00c810, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StepSound: {fileID: 8300000, guid: 13cc71c747d16429f84ec427fba1438e, type: 3}
 --- !u!1 &961438733204186460
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,7 +545,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100070, guid: 94b3f13726f794d48b006c72a69cf3e3, type: 3}
       propertyPath: m_Name
-      value: Running
+      value: Animations
       objectReference: {fileID: 0}
     - target: {fileID: 400070, guid: 94b3f13726f794d48b006c72a69cf3e3, type: 3}
       propertyPath: m_LocalPosition.x

@@ -8,6 +8,7 @@ public class RV : MonoBehaviour
 
     public AudioClip EngineStart;
     public AudioSource EngineRunning;
+    public AudioSource GameMusic;
 
     private bool _moving = false;
 
@@ -30,7 +31,9 @@ public class RV : MonoBehaviour
     IEnumerator DelayedRVStart() {
         yield return new WaitForSeconds(2.8f);
         
+        GameMusic.Play();
         EngineRunning.Play();
+        
         _moving = true;
     }
 }
