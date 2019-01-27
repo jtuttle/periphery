@@ -34,7 +34,7 @@ public class LightDie : MonoBehaviour
         float edge = spotLight.GetComponent<LightRadius>().radius * EDGE_FACTOR;
         float distance = Vector3.Distance(RV.transform.position, gameObject.transform.position);
 
-        if(distance > edge && gameObject.transform.position < 520) {
+        if(distance > edge && gameObject.transform.position.x < 520) {
             _secondsOutside += Time.deltaTime;
         } else {
             _secondsOutside = 0;
